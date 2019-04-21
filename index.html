@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>David Ko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="David Ko Web Developer Portfolio" />
+  <meta property="og:description" content="Web Developer Portfolio" />
+  <meta property="og:url" content="https://davidholyko.github.io/">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="assets/styles/themes/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="assets/styles/themes/prismjs/prism.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137961158-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137961158-1');
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <div id="navbar-container">
+    <div id="navbar" class="navbar">
+      <div id="navbar-items-container">
+        <h1 id="link-about-page" class="link link-0" data-id="0">About Me</h1>
+        <h1 id="link-skills-page" class="link link-1" data-id="1">My Skills</h1>
+        <h1 id="link-projects-page" class="link link-2" data-id="2">My Projects</h1>
+        <h1 id="link-code-page" class="link link-3" data-id="3">My Code</h1>
+        <h1 id="link-resume-page" class="link link-4" data-id="4">My Resume</h1>
+        <h1 id="link-contact-page" class="link link-5" data-id="5">Contact Me</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING ARROW UP BUTTON -->
+  <div id="scroll-up-button" class="">
+    <span class="fa fa-arrow-up"></span>
+  </div>
+
+  <!-- FLOATING ARROW DOWN BUTTON -->
+  <div id="scroll-down-button" class="">
+    <span class="fa fa-arrow-down"></span>
+  </div>
+
+
+  <!-- SUPER PAGE START -->
+  <div id="super-page" data-spy="scroll" data-target="#navbar" data-offset="0">
+
+    <!-- BACKGROUND IMAGE -->
+    <div id="background-image-container" class="">
+      <img id="background-image" src="public/images/backgrounds/background-1.jpg" alt="">
+
+      <div id="front-page-text" class="">
+        <span class="name">David Ko</span>
+        <span class="desc animated fadeInLeftBig">Software Engineer</span>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div id="clock" class="fixed-bottom px-3"></div>
+        <!-- <div id="clock-text" class="fixed-bottom"></div> -->
+      </div>
+    </div>
+
+    <!-- SUB PAGE START -->
+    <div id="sub-page">
+
+
+      <!-- ABOUT ME PAGE -->
+      <div id="about-page" class="page d-flex justify-content-center" data-id="0">
+        <div id="about-content" class="page-content">
+          <h1 class="text-center pt-5 page-title">My Story</h1>
+          <div id="about-container" class="text-justify"></div>
+        </div>
+      </div>
+
+      <!-- SKILLS PAGE -->
+      <div id="skills-page" class="page d-flex justify-content-center" data-id="1">
+        <div id="skills-content" class="page-content">
+          <h1 class="text-center pt-5 page-title">My Skills</h1>
+          <div id="skills-container" class="page-container d-flex"></div>
+        </div>
+      </div>
+
+      <!-- PROJECTS PAGE -->
+      <div id="projects-page" class="page d-flex justify-content-center" data-id="2">
+        <!-- PROJECTS CONTENT -->
+        <div id="projects-content" class="page-content">
+          <!-- PROJECTS CONTAINER -->
+          <h1 class="text-center page-title">Projects</h1>
+          <div id="projects-container" class="page-container">
+            <!-- PROJECTS CONTAINER END -->
+          </div>
+          <!-- PROJECTS CONTENT END -->
+        </div>
+        <!-- PROJECTS PAGE END -->
+      </div>
+
+      <!-- Code PAGE -->
+      <div id="code-page" class="page d-flex justify-content-center" data-id="3">
+        <div id="code-content" class="page-content">
+          <h1 class="text-center page-title pt-5">Code Samples</h1>
+          <div id="code-container">
+
+            <div class="d-flex flex-column justify-content-center">
+              <h3 class="text-center mt-5">Fizzbuzz with ternary syntax, array iteration methods, objects, and parameters </h3>
+              <div class="text-center">
+                <button id="code-fizzbuzz-toggle" class="btn btn-primary m-2" data-toggle="collapse" href=".fizzbuzz">Toggle Comments in Code Sample Below</button>
+              </div>
+            </div>
+
+            <pre id="code-fizzbuzz" class="fizzbuzz m-0 py-0 px-5 w-100 collapse show">
+        <code class="language-javascript w-100">
+const fizzbuzz = (values, maxNumber) => {
+  for (let i = 1; i <= maxNumber; i++) {
+    let output = ''
+    values.forEach(item => { if (!(i % item.number)) { output += item.word } })
+    output ? console.log(output) : console.log(i)
+  }
+}
+        </code>
+        </pre>
+
+
+            <pre id="code-fizzbuzz-comments" class="fizzbuzz m-0 py-0 px-5 w-100 collapse">
+                <code class="language-javascript w-100">
+// function fizzbuzz takes two parameters
+// values which is an array of objects with the keys number and word
+// maxNumber which is an integer representing the maxNumber value
+
+const fizzbuzz = (values, maxNumber) => {
+
+  // iterate from 1 to maxNumber
+  for (let i = 1; i <= maxNumber; i++) {
+
+    // declare variable output with the value of empty string
+    let output = ''
+
+    // for each item (which is an object) in the array values
+    values.forEach(item => {
+      // if i is divisbly by the item's number
+      if (!(i % item.number)) {
+        // append the item's word
+        output += item.word
+      }
+    })
+    // empty string in JavaScript evaluates to falsy
+    // if output is truthy console log the output
+    // else console log i
+    output ? console.log(output) : console.log(i)
+  }
+}
+
+// example of how the function is invoke with arguments
+fizzbuzz([{number: 3, word: 'fizz'},{number: 4, word: 'rizz'}, {number: 5, word: 'buzz'}], 60)
+
+// outputs => fizzbuzz values from 1 to 60
+//            @ i === 12 => 'fizzrizz'
+//            @ i === 15 => 'fizzbuzz'
+//            @ i === 20 => 'rizzbuzz'
+//            @ i === 60 => 'fizzrizzbuzz'
+                </code>
+                </pre>
+
+            <div class="d-flex flex-column justify-content-center">
+              <h3 class="text-center mt-5">ROT13 Cipher as a JavaScript Module</h3>
+              <div class="text-center">
+                <button id="code-cipher-toggle" class="btn btn-primary m-2" data-toggle="collapse" href=".cipher">Toggle Comments in Code Sample Below</button>
+              </div>
+            </div>
+
+            <pre id="code-cipher" class="cipher m-0 py-0 px-5 w-100 collapse show">
+            <code class="language-javascript w-100">
+const ROT13Cipher = {
+  alphabet: function () { return 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ                                '.split('') },
+  code: function (data, rotNumber = 13) { return data.split('').map(letter => this.alphabet().indexOf(letter)).map(letterIndex => this.alphabet()[letterIndex + rotNumber]).join('') },
+  encode: function (data) { return this.code(data) },
+  decode: function (data) { return this.code(data) }
+}
+            </code>
+          </pre>
+
+
+            <pre id="code-cipher-comments" class="cipher m-0 py-0 px-5 w-100 collapse">
+                      <code class="language-javascript w-100">
+
+// ROT13Cipher is a module that has methods to encode and decode strings
+// into their ROT13 values
+
+const ROT13Cipher = {
+
+  // key alphabet with the value of the alphabet doubled and split into an array
+  // evaluates to ['a', 'b', ... , 'Y', 'Z', ... , ' ']
+  alphabet: function () { return 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ                                '.split('') },
+  // code function takes 2 parameters and outputs the ROT13 ciphered version
+  code: function (data, rotNumber = 13) {
+    // convert the input data into an array of individual letters
+    return data.split('').map(letter => {
+      // map each letter to the alphabet's first position of the letter
+      // i.e. 'b' would be mapped to 1
+      // because 'b' is at the 1th index of the alphabet array
+      this.alphabet().indexOf(letter)
+    }).map(letterIndex => {
+      // map the index to the value of the alphabet at the letter's index + 13
+      // switches the index to it's index + 13
+      // and maps the number to the letter at that index
+      // i.e. switches '1' to '14'
+      // alphabet at position 1 is 'b'
+      // alphabet at position 14 is 'o'
+      this.alphabet()[letterIndex + rotNumber]
+    }).join('')
+  },
+  encode: function (data) { return this.code(data) },
+  decode: function (data) { return this.code(data) }
+}
+
+// example of usage with argument 'The quick brown fox'
+ROT13Cipher.encode('The quick brown fox')
+
+// outputs => ROT13 Cipher version of input string
+//           'Gur dhvpx oebja sbk'
+                      </code>
+                    </pre>
+
+            <div class="d-flex flex-column justify-content-center">
+              <h3 class="text-center mt-5">Tic-Tac-Toe for Any Size with Recursion</h3>
+              <div class="text-center">
+                <button id="code-tic-tac-toe-toggle" class="btn btn-primary m-2" data-toggle="collapse" href=".tic-tac-toe">Toggle Comments in Code Sample Below</button>
+              </div>
+            </div>
+
+            <pre id="code-tic-tac-toe" class="tic-tac-toe collapse show m-0 py-0 px-5 w-100">
+            <code class="language-javascript w-100">
+const checkForWinner = (size, board) => {
+  if (!board) { board = Array.from(Array(size).keys()) }
+  const winner = []
+  const boardSize = Math.sqrt(board.length) | 0
+  const diagonal = boardSize - 1
+
+  const checkLine = function (axis = 3, initialValue = 0, incrementX = 1, incrementY = boardSize, cycle = 1) {
+    const check = []; cycle = cycle - 1
+    for (let i = 0; i < boardSize; i++) { check.push(board[initialValue + incrementX * i]) }
+    if (check.every(value => value === check[0])) { winner.push(check[0]) }
+    if (initialValue === diagonal) { return checkLine(axis, initialValue - diagonal, diagonal + 2) }
+    if (!cycle) {
+      axis = axis - 1
+      if (!axis && !cycle) { return }
+      if (axis === 3) { return checkLine(axis, 0, incrementX, incrementY, boardSize) }
+      if (axis === 2) { return checkLine(axis, 0, incrementY, incrementX, boardSize) }
+      if (axis === 1) { return checkLine(axis, diagonal, diagonal) }
+    }
+    return checkLine(axis, initialValue + incrementY, incrementX, incrementY, cycle)
+  }
+
+  checkLine(4)
+  return winner[0]
+}
+        </code>
+      </pre>
+
+            <pre id="code-tic-tac-toe-comments" class="tic-tac-toe collapse m-0 py-0 px-5 w-100">
+        <code class="language-javascript w-100">
+// checkForWinner checks if an array holds the same value
+// for its respective virtual x-axis, y-axis and diagonal lines
+// checkForWinner takes 2 argument which is an array
+// size is used for testing purposes
+// an array with values 0...N where N is the size is produced
+// if no board array is passed in
+// the array must have a length that is a square number greater than 0
+
+const checkForWinner = (size, board) => {
+  // if there is no board, produce one with the values 0 to N
+  // i.e. size 16 produces board = [0, 1, 2, ..., 15]
+  if (!board) { board = Array.from(Array(size).keys()) }
+
+  // declare variable winner which is an array which will hold the winner (X or O)
+  const winner = []
+
+  // declare variable boardSize which is the length of the side of a board
+  // i.e. board of size 16 is an abstraction of a 4x4 grid
+  // the length of that side is the square root of the length of the size
+  const boardSize = Math.sqrt(board.length) | 0
+
+  // diagonal top right to bottom left starts at boardSize - 1
+  const diagonal = boardSize - 1
+
+  // recursive function that takes 5 paramters
+  // initialValue is the start of the board (top left)
+  // incrementX is the difference on the X axis from one index to the next
+  // incrementY is the difference on the Y axis from one index to the next
+  // cycle is the number of times the function is run per axis (X, Y, diagonal)
+  const checkLine = function (axis = 3, initialValue = 0, incrementX = 1, incrementY = boardSize, cycle = 1) {
+
+    // declare variable check which will hold the values
+    const check = []
+
+    // de-increment cycle on each recursive call
+    cycle = cycle - 1
+
+    // alias axis numbers to their representation
+    const axes = { 3: 'X axis', 2: 'Y axis', 1: 'Diagonal' }
+
+    // loop through the board size
+    for (let i = 0; i < boardSize; i++) {
+      // push onto check array the value of board at position
+      // on first recursive call in 4x4 board: pushes values at index 0, 1, 2, 3
+      // on second recursive call in 4x4 board: pushes values at index 4, 5, 6, 7
+      // on fifth recursive call in 4x4 board: pushes values at index 0, 4, 8, 12
+      check.push(board[initialValue + incrementX * i])
+     }
+
+    // for testing purposes
+    if (axis <= 3) {
+      // console log the axis and indexes that are checked
+      console.log(`${axes[axis]} indexes: ${check}`)
+     }
+
+    // if every value in the array is the same as the first one
+    if (check.every(value => value === check[0])) {
+      // push the value onto the winner array
+      winner.push(check[0])
+    }
+
+    // if initialValue starts at the index of the top-right to bottom-left diagonal
+    if (initialValue === diagonal) {
+      // flip to top-left to bottom-right diagonal
+      return checkLine(axis, initialValue - diagonal, diagonal + 2)
+    }
+    // if cycle is falsy (reaches 0)
+    if (!cycle) {
+      // de-increment axis
+      axis = axis - 1
+      // if axis and cycle are both falsy (both 0)
+      if (!axis && !cycle) {
+        // exit recursion
+        return
+      }
+
+      if (axis === 3) {
+        // check all values in X axis direction
+        return checkLine(axis, 0, incrementX, incrementY, boardSize)
+       }
+      if (axis === 2) {
+        // check all values in Y axis direction
+        return checkLine(axis, 0, incrementY, incrementX, boardSize)
+       }
+      if (axis === 1) {
+        // check all values in top-right to bottom-left diagonal
+        return checkLine(axis, diagonal, diagonal)
+       }
+    }
+    return checkLine(axis, initialValue + incrementY, incrementX, incrementY, cycle)
+  }
+
+  // invoke recursive function
+  checkLine(4)
+
+  // return the value at position 0 of winner array
+  return winner[0]
+}
+
+// invoke function with test array of size 16
+checkForWinner(16)
+
+// outputs => indexes of the lines to be checked
+//            X axis indexes: 0,1,2,3
+//            X axis indexes: 4,5,6,7
+//            X axis indexes: 8,9,10,11
+//            X axis indexes: 12,13,14,15
+//            Y axis indexes: 0,4,8,12
+//            Y axis indexes: 1,5,9,13
+//            Y axis indexes: 2,6,10,14
+//            Y axis indexes: 3,7,11,15
+//            Y axis indexes: 0,5,10,15
+//            Diagonal indexes: 3,6,9,12
+//            Diagonal indexes: 0,5,10,15
+
+    </code>
+  </pre>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- RESUME PAGE -->
+      <div id="resume-page" class="page d-flex justify-content-center" data-id="4">
+        <div id="resume-content" class="page-content">
+          <div id="resume-container" class="text-center d-flex flex-column">
+            <h1 class="page-title">Resume</h1>
+            <div>
+              <a id="resume-link" class="resume-link d-inline" href="https://davidholyko.github.io/resume/" target="_blank">Please click here to visit my resume page</a>
+              <img id="resume-img" class="resume-img" src="public/images/resume/resume.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CONTACT PAGE -->
+      <div id="contact-page" class="page page-min d-flex justify-content-center" data-id="5">
+        <div id="contact-content" class="page-content">
+          <div id="contact-container" class="d-flex flex-column h-100 justify-content-around ">
+            <h1 class="page-title text-center">Contact Me</h1>
+            <div>
+              <h2 class="text-center">Need help on a project? Looking for a new hire? Send me a message or email!</h2>
+              <h2 class="text-center">I'd love to hear from you!</h2>
+            </div>
+            <div id="contact-me-icons" class="d-flex justify-content-around">
+              <a class="" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=david.holy.ko@gmail.com" target="_blank">
+                <img class="icon-big" src="public/images/icons/gmail.png" alt="">
+              </a>
+
+              <a class="" href="https://github.com/davidholyko" target="_blank">
+                <img class="icon-big" src="public/images/icons/github.png" alt="">
+              </a>
+
+              <a class="" href="https://www.linkedin.com/in/davidhko1/" target="_blank">
+                <img class="icon-big" src="public/images/icons/linkedin.png" alt="">
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB PAGE END -->
+    </div>
+    <!-- SUPER PAGE END -->
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.fa-arrow-up {
+  margin-top: 25px;
+  font-size: 3rem;
+}
+
+.fa-arrow-down {
+  margin-top: 25px;
+  font-size: 3rem;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    z-index: 1;
+    transform: scale(1.25);
+  }
+
+  &:hover ~ * {
+    // will scale down rest of siblings
+    // transform: scale(0.75);
+  }
+}
+
+.icon-big {
+  height: 300px;
+  width: 300px;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    z-index: 1;
+    transform: scale(1.2);
+  }
+}
+
+.tooltip-inner {
+  background-color: rgba(0,0,0,0.9);
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  font-size: 2rem;
+  max-width: 500px;
+}

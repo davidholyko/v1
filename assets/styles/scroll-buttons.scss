@@ -1,0 +1,75 @@
+#scroll-up-button {
+  display: none;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  right: 50px;
+  background-color: #0C9;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 75;
+
+  &:active {
+    background-color: black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #09C;
+    box-shadow: 0 0 0 rgba(0,144,192, 0.5);
+    animation: pulse 1s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+
+    70% {
+      box-shadow: 0 0 0 100px rgba(204,169,44, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+}
+
+#scroll-down-button {
+  display: none;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 50px;
+  left: 50px;
+  background-color: red;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 75;
+
+  &:active {
+    background-color: black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #F88;
+    box-shadow: 0 0 0 rgba(255,128,128, 0.5);
+    animation: pulse 1s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+
+    70% {
+      box-shadow: 0 0 0 100px rgba(204,169,44, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+}

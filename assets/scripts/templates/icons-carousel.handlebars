@@ -1,0 +1,32 @@
+
+<h1>Languages</h1>
+<div class="icon-carousel">
+
+  {{#each icons as |icon|}}
+
+  <img src={{icon.link}} class="icon m-3 {{parseIcon icon 'language'}}" data-toggle="tooltip" data-type={{icon.type}} title={{icon.title}}></img>
+
+
+  {{/each}}
+</div>
+
+<h1>Libraries/Frameworks</h1>
+<div class="icon-carousel">
+
+  {{#each icons as |icon|}}
+
+  <img src={{icon.link}} class="icon m-3 {{parseIcon icon 'library'}}" data-toggle="tooltip" data-type={{icon.type}} title={{icon.title}}></img>
+
+  {{/each}}
+</div>
+
+
+<h1>Technologies</h1>
+<div class="icon-carousel">
+
+  {{#each icons as |icon|}}
+
+  <img src={{icon.link}} class="icon m-3 {{parseIcon icon 'technology'}}" data-toggle="tooltip" data-type={{icon.type}} title={{icon.title}}></img>
+
+  {{/each}}
+</div>

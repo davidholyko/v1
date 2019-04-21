@@ -1,0 +1,61 @@
+{{#each carousels as |carousel|}}
+
+<!--  CAROUSEL -->
+<div id="project-{{carousel.id}}-carousel" class="carousel slide" data-title="{{carousel.title}}" data-ride="carousel" data-interval="2500">
+  <ol class="carousel-indicators">
+    <li data-target="#project-{{carousel.id}}" data-slide-to="0" class="active"></li>
+    <li data-target="#project-{{carousel.id}}" data-slide-to="1" class=""></li>
+    <li data-target="#project-{{carousel.id}}" data-slide-to="2" class=""></li>
+    <li data-target="#project-{{carousel.id}}" data-slide-to="3" class=""></li>
+    <li data-target="#project-{{carousel.id}}" data-slide-to="4" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="public/images/project-{{carousel.id}}/screen-0.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="public/images/project-{{carousel.id}}/screen-1.png" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="public/images/project-{{carousel.id}}/screen-2.png" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="public/images/project-{{carousel.id}}/screen-3.png" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="public/images/project-{{carousel.id}}/screen-4.png" alt="Fifth slide">
+    </div>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="overlay"><h1>{{carousel.title}}</h1></div>
+
+</div>
+
+
+<!-- MODAL -->
+<div class="modal fade" id="project-{{carousel.id}}-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h1 class="">{{carousel.title}}</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="d-block w-100" src="public/images/project-{{carousel.id}}/screen-0.png" alt="First slide">
+        <h4 class="text-justify pt-4"><span class="mx-3"></span>{{carousel.description}}</h4>
+      </div>
+      <div class="modal-footer">
+        <div class="mr-auto">
+          <a class="btn btn-success text-light" target="_blank" href={{carousel.github}}>Github Codebase Link</a>
+          <a class="btn btn-success text-light" target="_blank" href={{carousel.live}}>Live Demo Link</a>
+        </div>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/each}}

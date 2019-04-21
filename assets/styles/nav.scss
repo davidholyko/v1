@@ -1,0 +1,31 @@
+.highlight {
+  color: rgba(200,128,64, 1);
+}
+
+.link {
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+}
+
+#navbar {
+  height: 50px;
+  width: 100vw;
+  max-width: 100%;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 100;
+  display: none;
+  -webkit-backface-visibility: hidden;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+}
+
+#navbar-items-container {
+  display: flex;
+  justify-content: space-around;
+}
