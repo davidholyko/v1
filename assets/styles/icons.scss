@@ -17,11 +17,6 @@
     z-index: 1;
     transform: scale(1.25);
   }
-
-  &:hover ~ * {
-    // will scale down rest of siblings
-    // transform: scale(0.75);
-  }
 }
 
 .icon-big {
