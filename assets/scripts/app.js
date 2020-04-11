@@ -1,6 +1,7 @@
 import 'owl.carousel/dist/assets/owl.carousel.css'
 import 'owl.carousel'
 
+const prism = require('./prism')
 const storeActions = require('./client-side/store-actions')
 const animation = require('./view/animation')
 const pageFillIn = require('./page/page-fill-in')
@@ -12,4 +13,5 @@ $(() => {
   pageFillIn.onPageLoad()
   animation.onPageLoad()
   pageEvents.addHandlers()
+  prism()
 })
