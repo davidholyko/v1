@@ -1,134 +1,195 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>David Ko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="David Ko Web Developer Portfolio" />
+    <meta property="og:description" content="Web Developer Portfolio" />
+    <meta property="og:url" content="https://davidholyko.github.io/" />
 
-<head>
-  <title>David Ko</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="David Ko Web Developer Portfolio" />
-  <meta property="og:description" content="Web Developer Portfolio" />
-  <meta property="og:url" content="https://davidholyko.github.io/">
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
 
-  <!-- Do not add `link` tags-->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link href="assets/styles/themes/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+    <!-- Do not add `script` tags-->
+    <script
+      src="public/vendor.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+    <script
+      src="public/application.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+    <script
+      src="assets/styles/themes/prismjs/prism.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
 
-  <!-- Do not add `script` tags-->
-  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-  <script src="assets/styles/themes/prismjs/prism.js" type="text/javascript" charset="utf-8" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-137961158-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137961158-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag("config", "UA-137961158-1");
+    </script>
+  </head>
 
-    gtag('config', 'UA-137961158-1');
-  </script>
-
-
-
-</head>
-
-<body>
-
-  <!-- NAVIGATION BAR -->
-  <div id="navbar-container">
-    <div id="navbar" class="navbar">
-      <div id="navbar-items-container">
-        <h1 id="link-about-page" class="link link-0" data-id="0">About Me</h1>
-        <h1 id="link-skills-page" class="link link-1" data-id="1">My Skills</h1>
-        <h1 id="link-projects-page" class="link link-2" data-id="2">My Projects</h1>
-        <h1 id="link-code-page" class="link link-3" data-id="3">My Code</h1>
-        <h1 id="link-resume-page" class="link link-4" data-id="4">My Resume</h1>
-        <h1 id="link-contact-page" class="link link-5" data-id="5">Contact Me</h1>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <div id="navbar-container">
+      <div id="navbar" class="navbar">
+        <div id="navbar-items-container">
+          <h1 id="link-about-page" class="link link-0" data-id="0">About Me</h1>
+          <h1 id="link-skills-page" class="link link-1" data-id="1">
+            My Skills
+          </h1>
+          <h1 id="link-projects-page" class="link link-2" data-id="2">
+            My Projects
+          </h1>
+          <h1 id="link-code-page" class="link link-3" data-id="3">My Code</h1>
+          <h1 id="link-resume-page" class="link link-4" data-id="4">
+            My Resume
+          </h1>
+          <h1 id="link-contact-page" class="link link-5" data-id="5">
+            Contact Me
+          </h1>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- FLOATING ARROW UP BUTTON -->
-  <div id="scroll-up-button" class="">
-    <span class="fa fa-arrow-up"></span>
-  </div>
-
-  <!-- FLOATING ARROW DOWN BUTTON -->
-  <div id="scroll-down-button" class="">
-    <span class="fa fa-arrow-down"></span>
-  </div>
-
-
-  <!-- SUPER PAGE START -->
-  <div id="super-page" data-spy="scroll" data-target="#navbar" data-offset="0">
-
-    <!-- BACKGROUND IMAGE -->
-    <div id="background-image-container" class="">
-      <img id="background-image" src="public/images/backgrounds/background-1.jpg" alt="">
-
-      <div id="front-page-text" class="">
-        <span class="name">David Ko</span>
-        <span class="desc animated fadeInLeftBig">Software Engineer</span>
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <div id="clock" class="fixed-bottom px-3"></div>
-        <!-- <div id="clock-text" class="fixed-bottom"></div> -->
-      </div>
+    <!-- FLOATING ARROW UP BUTTON -->
+    <div id="scroll-up-button" class="">
+      <span class="fa fa-arrow-up"></span>
     </div>
 
-    <!-- SUB PAGE START -->
-    <div id="sub-page">
+    <!-- FLOATING ARROW DOWN BUTTON -->
+    <div id="scroll-down-button" class="">
+      <span class="fa fa-arrow-down"></span>
+    </div>
 
+    <!-- SUPER PAGE START -->
+    <div
+      id="super-page"
+      data-spy="scroll"
+      data-target="#navbar"
+      data-offset="0"
+    >
+      <!-- BACKGROUND IMAGE -->
+      <div id="background-image-container" class="">
+        <img
+          id="background-image"
+          src="public/images/backgrounds/background-1.jpg"
+          alt=""
+        />
 
-      <!-- ABOUT ME PAGE -->
-      <div id="about-page" class="page d-flex justify-content-center" data-id="0">
-        <div id="about-content" class="page-content">
-          <h1 class="text-center pt-5 page-title">My Story</h1>
-          <div id="about-container" class="text-justify"></div>
+        <div id="front-page-text" class="">
+          <span class="name">David Ko</span>
+          <span class="desc animated fadeInLeftBig">Software Engineer</span>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div id="clock" class="fixed-bottom px-3"></div>
+          <!-- <div id="clock-text" class="fixed-bottom"></div> -->
         </div>
       </div>
 
-      <!-- SKILLS PAGE -->
-      <div id="skills-page" class="page d-flex justify-content-center" data-id="1">
-        <div id="skills-content" class="page-content">
-          <h1 class="text-center pt-5 page-title">My Skills</h1>
-          <div id="skills-container" class="page-container d-flex"></div>
-        </div>
-      </div>
-
-      <!-- PROJECTS PAGE -->
-      <div id="projects-page" class="page d-flex justify-content-center" data-id="2">
-        <!-- PROJECTS CONTENT -->
-        <div id="projects-content" class="page-content">
-          <!-- PROJECTS CONTAINER -->
-          <h1 class="text-center page-title">Projects</h1>
-          <div id="projects-container" class="page-container">
-            <!-- PROJECTS CONTAINER END -->
+      <!-- SUB PAGE START -->
+      <div id="sub-page">
+        <!-- ABOUT ME PAGE -->
+        <div
+          id="about-page"
+          class="page d-flex justify-content-center"
+          data-id="0"
+        >
+          <div id="about-content" class="page-content">
+            <h1 class="text-center pt-5 page-title">My Story</h1>
+            <div id="about-container" class="text-justify"></div>
           </div>
-          <!-- PROJECTS CONTENT END -->
         </div>
-        <!-- PROJECTS PAGE END -->
-      </div>
 
-      <!-- Code PAGE -->
-      <div id="code-page" class="page d-flex justify-content-center" data-id="3">
-        <div id="code-content" class="page-content">
-          <h1 class="text-center page-title pt-5">Code Samples</h1>
-          <div id="code-container">
+        <!-- SKILLS PAGE -->
+        <div
+          id="skills-page"
+          class="page d-flex justify-content-center"
+          data-id="1"
+        >
+          <div id="skills-content" class="page-content">
+            <h1 class="text-center pt-5 page-title">My Skills</h1>
+            <div id="skills-container" class="page-container d-flex"></div>
+          </div>
+        </div>
 
-            <div class="d-flex flex-column justify-content-center">
-              <h3 class="text-center mt-5">Fizzbuzz with ternary syntax, array iteration methods, objects, and parameters </h3>
-              <div class="text-center">
-                <button id="code-fizzbuzz-toggle" class="btn btn-primary m-2" data-toggle="collapse" href=".fizzbuzz">Toggle Comments in Code Sample Below</button>
-              </div>
+        <!-- PROJECTS PAGE -->
+        <div
+          id="projects-page"
+          class="page d-flex justify-content-center"
+          data-id="2"
+        >
+          <!-- PROJECTS CONTENT -->
+          <div id="projects-content" class="page-content">
+            <!-- PROJECTS CONTAINER -->
+            <h1 class="text-center page-title">Projects</h1>
+            <div id="projects-container" class="page-container">
+              <!-- PROJECTS CONTAINER END -->
             </div>
+            <!-- PROJECTS CONTENT END -->
+          </div>
+          <!-- PROJECTS PAGE END -->
+        </div>
 
-            <pre id="code-fizzbuzz" class="fizzbuzz m-0 py-0 px-5 w-100 collapse show">
+        <!-- Code PAGE -->
+        <div
+          id="code-page"
+          class="page d-flex justify-content-center"
+          data-id="3"
+        >
+          <div id="code-content" class="page-content">
+            <h1 class="text-center page-title pt-5">Code Samples</h1>
+            <div id="code-container">
+              <div class="d-flex flex-column justify-content-center">
+                <h3 class="text-center mt-5">
+                  Fizzbuzz with ternary syntax, array iteration methods,
+                  objects, and parameters
+                </h3>
+                <div class="text-center">
+                  <button
+                    id="code-fizzbuzz-toggle"
+                    class="btn btn-primary m-2"
+                    data-toggle="collapse"
+                    href=".fizzbuzz"
+                  >
+                    Toggle Comments in Code Sample Below
+                  </button>
+                </div>
+              </div>
+
+              <pre
+                id="code-fizzbuzz"
+                class="fizzbuzz m-0 py-0 px-5 w-100 collapse show"
+              >
         <code class="language-javascript w-100">
 const fizzbuzz = (values, maxNumber) => {
   for (let i = 1; i <= maxNumber; i++) {
@@ -140,8 +201,10 @@ const fizzbuzz = (values, maxNumber) => {
         </code>
         </pre>
 
-
-            <pre id="code-fizzbuzz-comments" class="fizzbuzz m-0 py-0 px-5 w-100 collapse">
+              <pre
+                id="code-fizzbuzz-comments"
+                class="fizzbuzz m-0 py-0 px-5 w-100 collapse"
+              >
                 <code class="language-javascript w-100">
 // function fizzbuzz takes two parameters
 // values which is an array of objects with the keys number and word
@@ -181,14 +244,26 @@ fizzbuzz([{number: 3, word: 'fizz'},{number: 4, word: 'rizz'}, {number: 5, word:
                 </code>
                 </pre>
 
-            <div class="d-flex flex-column justify-content-center">
-              <h3 class="text-center mt-5">ROT13 Cipher as a JavaScript Module</h3>
-              <div class="text-center">
-                <button id="code-cipher-toggle" class="btn btn-primary m-2" data-toggle="collapse" href=".cipher">Toggle Comments in Code Sample Below</button>
+              <div class="d-flex flex-column justify-content-center">
+                <h3 class="text-center mt-5">
+                  ROT13 Cipher as a JavaScript Module
+                </h3>
+                <div class="text-center">
+                  <button
+                    id="code-cipher-toggle"
+                    class="btn btn-primary m-2"
+                    data-toggle="collapse"
+                    href=".cipher"
+                  >
+                    Toggle Comments in Code Sample Below
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <pre id="code-cipher" class="cipher m-0 py-0 px-5 w-100 collapse show">
+              <pre
+                id="code-cipher"
+                class="cipher m-0 py-0 px-5 w-100 collapse show"
+              >
             <code class="language-javascript w-100">
 const ROT13Cipher = {
   alphabet: function () { return 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ                                '.split('') },
@@ -199,8 +274,10 @@ const ROT13Cipher = {
             </code>
           </pre>
 
-
-            <pre id="code-cipher-comments" class="cipher m-0 py-0 px-5 w-100 collapse">
+              <pre
+                id="code-cipher-comments"
+                class="cipher m-0 py-0 px-5 w-100 collapse"
+              >
                       <code class="language-javascript w-100">
 
 // ROT13Cipher is a module that has methods to encode and decode strings
@@ -241,14 +318,26 @@ ROT13Cipher.encode('The quick brown fox')
                       </code>
                     </pre>
 
-            <div class="d-flex flex-column justify-content-center">
-              <h3 class="text-center mt-5">Tic-Tac-Toe for Any Size with Recursion</h3>
-              <div class="text-center">
-                <button id="code-tic-tac-toe-toggle" class="btn btn-primary m-2" data-toggle="collapse" href=".tic-tac-toe">Toggle Comments in Code Sample Below</button>
+              <div class="d-flex flex-column justify-content-center">
+                <h3 class="text-center mt-5">
+                  Tic-Tac-Toe for Any Size with Recursion
+                </h3>
+                <div class="text-center">
+                  <button
+                    id="code-tic-tac-toe-toggle"
+                    class="btn btn-primary m-2"
+                    data-toggle="collapse"
+                    href=".tic-tac-toe"
+                  >
+                    Toggle Comments in Code Sample Below
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <pre id="code-tic-tac-toe" class="tic-tac-toe collapse show m-0 py-0 px-5 w-100">
+              <pre
+                id="code-tic-tac-toe"
+                class="tic-tac-toe collapse show m-0 py-0 px-5 w-100"
+              >
             <code class="language-javascript w-100">
 const checkForWinner = (size, board) => {
   if (!board) { board = Array.from(Array(size).keys()) }
@@ -277,7 +366,10 @@ const checkForWinner = (size, board) => {
         </code>
       </pre>
 
-            <pre id="code-tic-tac-toe-comments" class="tic-tac-toe collapse m-0 py-0 px-5 w-100">
+              <pre
+                id="code-tic-tac-toe-comments"
+                class="tic-tac-toe collapse m-0 py-0 px-5 w-100"
+              >
         <code class="language-javascript w-100">
 // checkForWinner checks if an array holds the same value
 // for its respective virtual x-axis, y-axis and diagonal lines
@@ -396,58 +488,101 @@ checkForWinner(16)
 
     </code>
   </pre>
-
-
-          </div>
-        </div>
-      </div>
-
-      <!-- RESUME PAGE -->
-      <div id="resume-page" class="page d-flex justify-content-center" data-id="4">
-        <div id="resume-content" class="page-content">
-          <div id="resume-container" class="text-center d-flex flex-column">
-            <h1 class="page-title">Resume</h1>
-            <div>
-              <a id="resume-link" class="resume-link d-inline" href="https://davidholyko.github.io/resume/" target="_blank">Please click here to visit my resume page</a>
-              <img id="resume-img" class="resume-img" src="public/images/resume/resume.png" alt="">
             </div>
           </div>
         </div>
-      </div>
 
-
-      <!-- CONTACT PAGE -->
-      <div id="contact-page" class="page page-min d-flex justify-content-center" data-id="5">
-        <div id="contact-content" class="page-content">
-          <div id="contact-container" class="d-flex flex-column h-100 justify-content-around ">
-            <h1 class="page-title text-center">Contact Me</h1>
-            <div>
-              <h2 class="text-center">Need help on a project? Looking for a new hire? Send me a message or email!</h2>
-              <h2 class="text-center">I'd love to hear from you!</h2>
-            </div>
-            <div id="contact-me-icons" class="d-flex justify-content-around">
-              <a class="" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=david.holy.ko@gmail.com" target="_blank">
-                <img class="icon-big" src="public/images/icons/gmail.png" alt="">
-              </a>
-
-              <a class="" href="https://github.com/davidholyko" target="_blank">
-                <img class="icon-big" src="public/images/icons/github.png" alt="">
-              </a>
-
-              <a class="" href="https://www.linkedin.com/in/davidhko1/" target="_blank">
-                <img class="icon-big" src="public/images/icons/linkedin.png" alt="">
-              </a>
-
+        <!-- RESUME PAGE -->
+        <div
+          id="resume-page"
+          class="page d-flex justify-content-center"
+          data-id="4"
+        >
+          <div id="resume-content" class="page-content">
+            <div id="resume-container" class="text-center d-flex flex-column">
+              <h1 class="page-title">Resume</h1>
+              <div>
+                <a
+                  id="resume-link"
+                  class="resume-link d-inline"
+                  href="https://davidholyko.github.io/resume/"
+                  target="_blank"
+                  >Please click here to visit my resume page</a
+                >
+                <img
+                  id="resume-img"
+                  class="resume-img"
+                  src="public/images/resume/resume.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- SUB PAGE END -->
+        <!-- CONTACT PAGE -->
+        <div
+          id="contact-page"
+          class="page page-min d-flex justify-content-center"
+          data-id="5"
+        >
+          <div id="contact-content" class="page-content">
+            <div
+              id="contact-container"
+              class="d-flex flex-column h-100 justify-content-around"
+            >
+              <h1 class="page-title text-center">Contact Me</h1>
+              <div>
+                <h2 class="text-center">
+                  Need help on a project? Looking for a new hire? Send me a
+                  message or email!
+                </h2>
+                <h2 class="text-center">I'd love to hear from you!</h2>
+              </div>
+              <div id="contact-me-icons" class="d-flex justify-content-around">
+                <a
+                  class=""
+                  href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=david.holy.ko@gmail.com"
+                  target="_blank"
+                >
+                  <img
+                    class="icon-big"
+                    src="public/images/icons/gmail.png"
+                    alt=""
+                  />
+                </a>
+
+                <a
+                  class=""
+                  href="https://github.com/davidholyko"
+                  target="_blank"
+                >
+                  <img
+                    class="icon-big"
+                    src="public/images/icons/github.png"
+                    alt=""
+                  />
+                </a>
+
+                <a
+                  class=""
+                  href="https://www.linkedin.com/in/davidhko1/"
+                  target="_blank"
+                >
+                  <img
+                    class="icon-big"
+                    src="public/images/icons/linkedin.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB PAGE END -->
+      </div>
+      <!-- SUPER PAGE END -->
     </div>
-    <!-- SUPER PAGE END -->
-  </div>
-
-</body>
-
+  </body>
 </html>
